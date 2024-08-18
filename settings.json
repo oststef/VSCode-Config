@@ -1,0 +1,111 @@
+{
+    // Open settings always as json
+    "workbench.settings.editor": "json",
+  
+    // Theme
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+  
+    // Keybindings
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindings": [
+      // Navigation
+      // switch between buffers
+      { "before": ["S-h"], "commands": [":bprevious"] },
+      { "before": ["S-l"], "commands": [":bnext"] },
+  
+      // Splits
+      { "before": ["leader", "v"], "commands": [":vsplit"] },
+      { "before": ["leader", "s"], "commands": [":split"] },
+  
+      // Panes
+      {
+        "before": ["C-h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+      },
+      {
+        "before": ["C-j"],
+        "commands": ["workbench.action.focusBelowGroup"]
+      },
+      {
+        "before": ["C-k"],
+        "commands": ["workbench.action.focusAboveGroup"]
+      },
+      {
+        "before": ["C-l"],
+        "commands": ["workbench.action.focusRightGroup"]
+      },
+  
+      // Explorer
+      {
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.view.explorer"]
+      },
+  
+      // Noice to have
+      { "before": ["leader", "p"], "commands": ["workbench.action.quickOpen"] },
+      { "before": ["leader", "f"], "commands": ["editor.action.formatDocument"] },
+      {
+        "before": ["g", "h"],
+        "commands": ["editor.action.showDefinitionPreviewHover"]
+      }
+    ],
+  
+    // UI
+    "editor.tabSize": 2,
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.lineNumbers": "relative",
+    "editor.fontSize": 14,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.minimap.renderCharacters": false,
+    "window.zoomLevel": 0.5,
+  
+    // Languages & fromatx
+    "files.trimTrailingWhitespace": true,
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.tabSize": 2
+    },
+    "[python]": {
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4
+    },
+    "[go]": {
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+      }
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 2
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 2
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.linkedEditing": false,
+      "editor.tabSize": 2
+    },
+    "[css]": {},
+  
+    // Misc
+    "redhat.telemetry.enabled": false,
+    "update.mode": "manual",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "remote.SSH.remotePlatform": {
+      "Infrastructure": "linux"
+    }
+  }
+  
